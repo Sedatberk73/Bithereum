@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bithereum Cafe - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e2f;
+            color: #fff;
+        }
+        header {
+            background-color: #3a3a55;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00bfff;
+            padding-bottom: 10px;
+        }
+
+        /* Menu Section Styles */
+        #full-menu {
+            background-color: #1e1e2f;
+            padding: 60px 20px;
+        }
+        .menu-section {
+            margin-bottom: 50px;
+        }
+        .menu-category-title {
+            font-size: 1.8em;
+            color: #00bfff;
+            border-bottom: 2px solid #3a3a55;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .menu-items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #3a3a55;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .item-details {
+            text-align: left;
+        }
+        .item-details h4 {
+            margin: 0;
+            color: #fff;
+            font-size: 1.2em;
+        }
+        .item-details p {
+            margin: 5px 0 0;
+            color: #ccc;
+            font-size: 0.9em;
+        }
+        .price {
+            font-weight: bold;
+            color: #00bfff;
+            font-size: 1.2em;
+        }
+        @media (max-width: 600px) {
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .item-details {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3a3a55;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="coffeeshop.html" style="text-decoration: none; color: inherit;">
+        <h1>Bithereum Cafe</h1>
+    </a>
+</header>
+
+<main>
+    <section id="full-menu">
+        <div class="container">
+            <h2 class="section-title">Our Full Menu</h2>
+            <div class="menu-section">
+                <h3 class="menu-category-title">Coffee & Espresso</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Espresso (Single/Double)</h4>
+                            <p>A pure, rich, and concentrated shot of coffee.</p>
+                        </div>
+                        <span class="price">$3.50/$4.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Americano</h4>
+                            <p>Espresso shots topped with hot water.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Latte</h4>
+                            <p>Espresso with steamed milk and a thin layer of foam.</p>
+                        </div>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Cappuccino</h4>
+                            <p>Equal parts espresso, steamed milk, and milk foam.</p>
+                        </div>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Macchiato</h4>
+                            <p>Espresso with a dollop of milk foam.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Mocha</h4>
+                            <p>A chocolate-infused latte.</p>
+                        </div>
+                        <span class="price">$5.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Flat White</h4>
+                            <p>Espresso with microfoam steamed milk.</p>
+                        </div>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Cortado</h4>
+                            <p>Equal parts espresso and steamed milk.</p>
+                        </div>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Drip Coffee</h4>
+                            <p>Freshly brewed hot coffee of the day.</p>
+                        </div>
+                        <span class="price">$3.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Cold Brew</h4>
+                            <p>Smooth, low-acidity coffee steeped for 24 hours.</p>
+                        </div>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Iced Latte</h4>
+                            <p>Chilled espresso with milk over ice.</p>
+                        </div>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Iced Americano</h4>
+                            <p>Espresso shots diluted with cold water and ice.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h3 class="menu-category-title">Specialty Lattes</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Bithereum Blue Latte</h4>
+                            <p>Our signature butterfly pea flower latte with vanilla.</p>
+                        </div>
+                        <span class="price">$6.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Golden Turmeric Latte</h4>
+                            <p>A warm, spiced, and caffeine-free turmeric latte.</p>
+                        </div>
+                        <span class="price">$6.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Caramel Macchiato</h4>
+                            <p>Vanilla latte with a drizzle of caramel syrup.</p>
+                        </div>
+                        <span class="price">$6.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Hazelnut Latte</h4>
+                            <p>Classic latte with a nutty hazelnut flavor.</p>
+                        </div>
+                        <span class="price">$5.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Peppermint Mocha</h4>
+                            <p>Seasonal mocha with a refreshing peppermint twist.</p>
+                        </div>
+                        <span class="price">$6.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>White Chocolate Mocha</h4>
+                            <p>Espresso with steamed milk and a rich white chocolate sauce.</p>
+                        </div>
+                        <span class="price">$6.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h3 class="menu-category-title">Sandwiches & Savories</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Feta Avocado Tomato Basil</h4>
+                            <p>Fresh and savory on white bread.</p>
+                        </div>
+                        <span class="price">$9.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Grilled Chicken Pesto</h4>
+                            <p>Grilled chicken breast with basil pesto and provolone cheese.</p>
+                        </div>
+                        <span class="price">$11.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Turkey & Provolone</h4>
+                            <p>Smoked turkey, provolone cheese, and red onion on ciabatta.</p>
+                        </div>
+                        <span class="price">$10.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Caprese</h4>
+                            <p>Fresh mozzarella, sliced tomatoes, and basil with balsamic glaze.</p>
+                        </div>
+                        <span class="price">$9.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Veggie Supreme</h4>
+                            <p>Roasted peppers, spinach, feta, and hummus in a wrap.</p>
+                        </div>
+                        <span class="price">$9.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Tuna Salad</h4>
+                            <p>Classic tuna salad with celery and mayonnaise on sourdough.</p>
+                        </div>
+                        <span class="price">$8.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Breakfast Croissant</h4>
+                            <p>Scrambled eggs, cheese, and your choice of ham or bacon.</p>
+                        </div>
+                        <span class="price">$7.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h3 class="menu-category-title">Pastries & More</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Chocolate Croissant</h4>
+                            <p>Flaky pastry filled with chocolate.</p>
+                        </div>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Blueberry Muffin</h4>
+                            <p>A soft muffin with fresh blueberries.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Lemon Poppy Seed Loaf</h4>
+                            <p>Sweet lemon-flavored loaf with poppy seeds.</p>
+                        </div>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Plain Croissant</h4>
+                            <p>A light, buttery, and flaky pastry.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Bagel with Cream Cheese</h4>
+                            <p>Toasted bagel with your choice of cream cheese.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Iced Tea (Unsweetened/Sweet)</h4>
+                            <p>Freshly brewed black iced tea.</p>
+                        </div>
+                        <span class="price">$3.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Mango Smoothie</h4>
+                            <p>Made with fresh mango and a hint of yogurt.</p>
+                        </div>
+                        <span class="price">$6.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-details">
+                            <h4>Hot Chocolate</h4>
+                            <p>Rich and creamy hot chocolate.</p>
+                        </div>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Bithereum Cafe. All Rights Reserved.</p>
+    <p>A Project by Bithereum007</p>
+</footer>
+
+</body>
+</html>

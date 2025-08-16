@@ -3,168 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bithereum 007 is a groundbreaking cryptocurrency merging the best of Bitcoin and Ethereum technologies. Learn more about its unique features and roadmap.">
-    <title>Bithereum 007</title>
+    <meta name="description" content="Bithereum Cafe: A premium coffee shop offering unique drinks, local sandwiches, and a modern payment system powered by Bithereum007.">
+    <title>Bithereum Cafe</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1e1e2f;
-            color: #fff;
-        }
-        header {
-            background-color: #3a3a55;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: #00bfff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        section {
-            padding: 20px;
-        }
-        .logo-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .logo {
-            width: 150px;
-            height: auto;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .section-title {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #3a3a55;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .social-links a {
-            color: #00bfff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .roadmap ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-    </style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e2f;
+      color: #fff;
+    }
+    header {
+      background-color: #3a3a55;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .dropdown {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+    }
+    .dropbtn {
+        background-color: #00bfff;
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3a3a55;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    .dropdown-content a {
+        color: #00bfff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #2a2a3f;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    section {
+      padding: 40px 20px;
+      margin-bottom: 40px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00bfff;
+      padding-bottom: 10px;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #3a3a55;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: #00bfff;
+    }
+    .buy-token-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 20px;
+      background-color: #00bfff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .buy-token-btn:hover {
+      background-color: #0099cc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #3a3a55;
+      margin-top: 40px;
+    }
+
+    /* -------- INFO SECTION -------- */
+    #info-section {
+      background-image: url('assets/genralpicturecoffeshop.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #fff;
+      padding: 80px 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    #info-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+    #info-section .two-column-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0 40px;
+      position: relative;
+      z-index: 2;
+      gap: 40px;
+    }
+    #info-section .content-block {
+      flex: 1;
+      max-width: 500px;
+      padding: 30px;
+      background-color: rgba(30, 30, 47, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    #info-section .content-block h2 {
+      color: #00bfff;
+      margin-top: 0;
+    }
+
+    /* Gallery Section Styles */
+    #gallery .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    #gallery .card img {
+        height: 250px;
+    }
+
+    @media (max-width: 768px) {
+      #info-section {
+        padding: 40px 20px;
+      }
+      #info-section .two-column-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      #info-section .content-block {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
+
 <header>
-    <div class="logo-container">
-        <a href="https://bithereum.vercel.app/assets/logo.png" target="_blank">
-            <img src="assets/logo.png" alt="Bithereum007 Logo" class="logo">
-        </a>
+    <h1>Bithereum Cafe</h1>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="menu.html">Full Menu</a>
+            <a href="#info-section">About Bithereum Token</a>
+            <a href="#gallery">Cafe Pictures</a>
+        </div>
     </div>
-    <h1>Bithereum007</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#tokenomics">Tokenomics</a>
-        <a href="coffee.html">Coffee Shop</a>
-        <a href="vending.html">Automated Pizza Vending</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contact">Contact</a>
-        <a href="#whitepaper">Whitepaper</a>
-    </nav>
 </header>
 
-<section id="about">
-    <div class="container">
-        <h2 class="section-title">About Bithereum 007</h2>
-        <p>Bithereum 007 is a cutting-edge cryptocurrency designed to merge the security of Bitcoin and the programmability of Ethereum. It brings unparalleled innovation to the blockchain world, providing secure, scalable, and efficient solutions for decentralized finance (DeFi) and beyond. With Bithereum 007, users can explore a new era of financial freedom and blockchain technology.</p>
-        <p><strong>Key Features:</strong></p>
-        <ul>
-            <li>High-speed and low-cost transactions.</li>
-            <li>Smart contract support for decentralized applications (dApps).</li>
-            <li>Secure and energy-efficient consensus mechanism.</li>
-        </ul>
-        <p><strong>About Meme Coins:</strong></p>
-        <p>Meme coins are cryptocurrencies inspired by internet memes, cultural trends, or fun ideas. They often rely on community support and viral marketing for adoption. Bithereum 007 aims to combine the engaging appeal of meme coins with real-world utility and technological innovation, offering a unique position in the blockchain ecosystem.</p>
-    </div>
-</section>
-
-<section id="tokenomics">
-    <div class="container">
-        <h2 class="section-title">Tokenomics</h2>
-        <p>The economic model of Bithereum 007 ensures stability and growth:</p>
-        <ul>
-            <li>Total Supply: 100,000,000 BTLM007</li>
-            <li>Distribution:
-                <ul>
-                    <li>50% - Liquidity and Ecosystem Development</li>
-                    <li>20% - Team and Development (2-year vesting period)</li>
-                    <li>15% - Marketing and Community Engagement</li>
-                    <li>15% - Reserve for Strategic Partnerships</li>
-                </ul>
-            </li>
-        </ul>
-        <p><strong>Public Links for Reference:</strong></p>
-        <ul>
-            <li><a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap</a> - Explore top cryptocurrencies and market trends.</li>
-            <li><a href="https://etherscan.io/" target="_blank">Etherscan</a> - Ethereum blockchain explorer.</li>
-            <li><a href="https://solscan.io/" target="_blank">SolScan</a> - Solana blockchain explorer.</li>
-            <li><a href="https://uniswap.org/" target="_blank">Uniswap</a> - Decentralized exchange for Ethereum tokens.</li>
-            <li><a href="https://dexscreener.com/solana/2s3yx2i4jfyfgcynttgbmrdwzrcengbdfwqxtsjiztlb" target="_blank">View Bithereum007 on Solscan</a> - Track token details and transactions.</li>
-        </ul>
-    </div>
-</section>
-
-<section id="roadmap">
-    <div class="container">
-        <h2 class="section-title">Roadmap</h2>
-        <p>Our vision for the future is outlined in the following roadmap:</p>
-        <ul>
-            <li>Q1 2025: Token Launch and Initial Exchange Offerings (IEOs)</li>
-            <li>Q2 2025: Strategic Partnerships and Major DEX Listings</li>
-            <li>Q3 2025: Release of Wallet Integration and Cross-chain Compatibility</li>
-            <li>Q4 2025: Implementation of Community Governance Protocols</li>
-        </ul>
-    </div>
-</section>
-
-<section id="whitepaper" style="margin-top: 30px;">
-    <h2>Download Whitepaper</h2>
-    <p>Learn more about Bithereum007 by reading our official whitepaper.</p>
-    <a href="https://bithereum.vercel.app/docs/Bithereum007_Whitepaper.pdf" target="_blank" style="text-decoration: none; color: blue; font-weight: bold;">
-        Download Whitepaper (PDF)
-    </a>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <p>We are here to connect with you. Reach out to us for queries, partnerships, or feedback.</p>
-        <div class="social-links">
-            <a href="https://x.com/countrytripsorg?s" target="_blank">Twitter</a>
-            <a href="https://t.me/+Fyz3pbjaA7c4NjYx" target="_blank">Telegram</a>
+<main>
+    <section id="hero">
+        <div class="container">
+            <h2 class="section-title">Your Next-Generation Coffee Experience</h2>
+            <p style="text-align: center;">
+                Discover a blend of rich, aromatic coffee and delicious, locally-inspired food.
+                At Bithereum Cafe, we combine a welcoming atmosphere with cutting-edge technology
+                for a seamless experience.
+            </p>
         </div>
-        <p>Email: <a href="mailto:info@bithereum007.com">info@bithereum007.com</a></p>
-    </div>
-</section>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Cafe & Gallery</h2>
+            <div class="content-grid">
+                <div class="card">
+                    <img src="assets/AICoffesExpresso.png" alt="Espresso Coffee">
+                    <h3>Espresso & Coffee</h3>
+                </div>
+                <div class="card">
+                    <img src="assets/bitheriumlatte.png" alt="Specialty Latte">
+                    <h3>Specialty Lattes</h3>
+                </div>
+                <div class="card">
+                    <img src="assets/fetaAvocado.png" alt="Feta Avocado Tomato Basil Sandwich">
+                    <h3>Feta Avocado Tomato Basil Sandwich</h3>
+                </div>
+                <div class="card">
+                    <img src="assets/uniqesandv.png" alt="Unique Sandwiches">
+                    <h3>Local & Unique Sandwiches</h3>
+                </div>
+                <div class="card">
+                    <img src="http://googleusercontent.com/image_generation_content/8" alt="Unique Sandwiches">
+                    <h3>Hand-crafted sandwiches</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-section">
+        <div class="two-column-container">
+            <div class="content-block">
+                <h2>About Our Cafe</h2>
+                <p>
+                    Welcome to Bithereum Cafe, where the rich aroma of expertly brewed coffee meets the innovative spirit of the blockchain.
+                    More than just a coffee shop, we envision Bithereum Cafe as a vibrant hub fostering community connections and embracing
+                    technological advancements. Our commitment starts with sourcing only the finest, ethically-traded coffee beans from
+                    around the globe, roasted to perfection to unlock their unique flavor profiles. Complementing our exceptional coffee,
+                    our culinary team crafts a delightful menu featuring unique and locally-inspired sandwiches, pastries, and treats,
+                    prepared with the freshest, highest-quality ingredients available.
+                </p>
+                <p>
+                    Step into an atmosphere designed to inspire both productivity and relaxation. Whether you're seeking a quiet corner
+                    for your morning ritual, a comfortable space for an afternoon break, or a collaborative environment for meeting
+                    friends or colleagues, Bithereum Cafe offers the perfect ambiance. We are proud to be at the forefront of integrating
+                    the exciting world of cryptocurrency with everyday experiences, offering a seamless and modern payment system powered
+                    by Bithereum007.
+                </p>
+                <p>
+                    Our journey begins with a passionate and dedicated team of 3-4 employees who are committed to providing exceptional
+                    service and creating a welcoming environment for every guest. Initially, our operating hours will be from 7:00 AM to
+                    4:00 PM, strategically chosen to cater to the morning and early afternoon rushes. As we grow and better understand
+                    the needs of our community, we plan to extend our hours to 7:00 PM. Our location has been carefully selected in a
+                    high-traffic area with a potential customer base of 50,000 to 100,000+, ensuring accessibility and visibility.
+                </p>
+            </div>
+            <div class="content-block">
+                <h2>Seamless Crypto Payments</h2>
+                <p>
+                    At Bithereum Cafe, we proudly accept Bithereum007 for all purchases. Experience the convenience of fast and secure
+                    decentralized payments, straight from your wallet.
+                </p>
+                <p>
+                    Don’t have Bithereum007 tokens yet? You can easily acquire them to use at our cafe and beyond.
+                </p>
+                <a href="https://dexscreener.com/solana/2s3yx2i4jfyfgcynttgbmrdwzrcengbdfwqxtsjiztlb"
+                   target="_blank" class="buy-token-btn">Buy Bithereum007 Token</a>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>&copy; 2025 Bithereum 007. All rights reserved.</p>
+    <p>&copy; 2025 Bithereum Cafe. All Rights Reserved.</p>
+    <p>A Project by Bithereum007</p>
 </footer>
+
 </body>
 </html>
