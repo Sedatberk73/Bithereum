@@ -33,6 +33,7 @@
         }
         section {
             padding: 40px 20px;
+            margin-bottom: 40px; /* Adds consistent spacing between sections */
         }
         .container {
             max-width: 960px;
@@ -99,29 +100,29 @@
             margin-top: 40px;
         }
         #about {
-        background-image: url('assets/genralpicturecoffeshop.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        color: #fff; /* Ensure text is visible */
-    }
-
-    #about::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to make text more readable */
-        z-index: 1;
-    }
-
-    #about .container {
-        position: relative;
-        z-index: 2; /* Ensures text is on top of the overlay */
-    }
+            background-image: url('assets/genralpicturecoffeshop.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            color: #fff;
+            padding: 80px 20px;
+            min-height: 400px;
+        }
+        #about::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        #about .container {
+            position: relative;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
@@ -156,7 +157,7 @@
                 <div class="card">
                     <img src="assets/bitheriumlatte.png" alt="Specialty Latte">
                     <h3>Specialty Lattes</h3>
-                    <p>Unique lattes like our signature Bithereum Blue and Golden Turmeric.</p>
+                    <p>Unique lattes like our signature BTLM007 Blue and Golden Turmeric.</p>
                 </div>
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1601633513470-761d43a1378f?w=500&auto=format&fit=crop" alt="Feta Avocado Tomato Basil Sandwich">
@@ -175,8 +176,9 @@
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Our Cafe</h2>
-            <p style="text-align: center;">Bithereum Cafe is more than just a place for coffee; it's a hub for community and innovation. We source the finest beans and freshest ingredients to craft a menu that delights. Our atmosphere is designed for productivity and relaxation, making it the perfect spot for your morning ritual or an afternoon break. We're proud to be at the forefront of combining great coffee with the future of finance.</p>
-            <p style="text-align: center;">We are launching with a passionate team of 3-4 employees, with operating hours from 7 AM to 4 PM, and extending to 7 PM as we grow. We look forward to serving you in our high-traffic, accessible location.</p>
+            <p style="text-align: center;">Welcome to Bithereum Cafe, where the rich aroma of expertly brewed coffee meets the innovative spirit of the blockchain. More than just a coffee shop, we envision Bithereum Cafe as a vibrant hub fostering community connections and embracing technological advancements. Our commitment starts with sourcing only the finest, ethically-traded coffee beans from around the globe, roasted to perfection to unlock their unique flavor profiles. Complementing our exceptional coffee, our culinary team crafts a delightful menu featuring unique and locally-inspired sandwiches, pastries, and treats, prepared with the freshest, highest-quality ingredients available.</p>
+            <p style="text-align: center;">Step into an atmosphere designed to inspire both productivity and relaxation. Whether you're seeking a quiet corner for your morning ritual, a comfortable space for an afternoon break, or a collaborative environment for meeting friends or colleagues, Bithereum Cafe offers the perfect ambiance. We are proud to be at the forefront of integrating the exciting world of cryptocurrency with everyday experiences, offering a seamless and modern payment system powered by Bithereum007.</p>
+            <p style="text-align: center;">Our journey begins with a passionate and dedicated team of 3-4 employees who are committed to providing exceptional service and creating a welcoming environment for every guest. Initially, our operating hours will be from 7:00 AM to 4:00 PM, strategically chosen to cater to the morning and early afternoon rushes. As we grow and better understand the needs of our community, we plan to extend our hours to 7:00 PM, allowing us to serve you longer into the day. Our location has been carefully selected in a high-traffic area with a potential customer base of 50,000 to 100,000 or more, ensuring accessibility and visibility for our cafe. We are excited to embark on this journey and look forward to becoming your favorite destination for quality coffee, delicious food, and a taste of the future.</p>
         </div>
     </section>
 
