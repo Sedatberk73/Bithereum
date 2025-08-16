@@ -16,16 +16,26 @@
             background-color: #3a3a55;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-        nav a {
+        .return-links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .return-links a {
             color: #00bfff;
             text-decoration: none;
-            margin: 0 15px;
+            margin-left: 15px;
             font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .return-links a:hover {
+            color: #0099cc;
         }
         .container {
             max-width: 960px;
@@ -112,9 +122,13 @@
 <body>
 
 <header>
-    <a href="coffeeshop.html" style="text-decoration: none; color: inherit;">
+    <a href="https://bithereum.vercel.app/coffee.html" style="text-decoration: none; color: inherit;">
         <h1>Bithereum Cafe</h1>
     </a>
+    <div class="return-links">
+        <a href="https://bithereum.vercel.app/coffee.html">Return to Cafe</a>
+        <a href="https://bithereum.vercel.app/" target="_blank">Return to Main Page</a>
+    </div>
 </header>
 
 <main>
