@@ -33,7 +33,6 @@
         }
         section {
             padding: 40px 20px;
-            margin-bottom: 40px; /* Adds consistent spacing between sections */
         }
         .container {
             max-width: 960px;
@@ -99,6 +98,7 @@
             background-color: #3a3a55;
             margin-top: 40px;
         }
+
         #about {
             background-image: url('assets/genralpicturecoffeshop.png');
             background-size: cover;
@@ -107,7 +107,9 @@
             position: relative;
             color: #fff;
             padding: 80px 20px;
-            min-height: 400px;
+            min-height: 500px; /* Adjusted min-height to ensure full background coverage */
+            display: flex; /* Centers the content */
+            align-items: center;
         }
         #about::before {
             content: "";
@@ -122,6 +124,10 @@
         #about .container {
             position: relative;
             z-index: 2;
+            padding: 40px;
+            background-color: rgba(30, 30, 47, 0.85); /* Semi-transparent background for text */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -160,12 +166,12 @@
                     <p>Unique lattes like our signature BTLM007 Blue and Golden Turmeric.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1601633513470-761d43a1378f?w=500&auto=format&fit=crop" alt="Feta Avocado Tomato Basil Sandwich">
+                    <img src="assets/fetaAvocado.png" alt="Feta Avocado Tomato Basil Sandwich">
                     <h3>Feta Avocado Tomato Basil Sandwich</h3>
                     <p>A fresh and savory delight on white bread, a true cafe favorite.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1632551351185-1d02c914e66c?w=500&auto=format&fit=crop" alt="Unique Sandwiches">
+                    <img src="assets/uniqesandv.png" alt="Unique Sandwiches">
                     <h3>Local & Unique Sandwiches</h3>
                     <p>Hand-crafted sandwiches made with local ingredients for a unique taste.</p>
                 </div>
