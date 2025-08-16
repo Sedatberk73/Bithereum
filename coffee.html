@@ -6,142 +6,144 @@
     <meta name="description" content="Bithereum Cafe: A premium coffee shop offering unique drinks, local sandwiches, and a modern payment system powered by Bithereum007.">
     <title>Bithereum Cafe</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1e1e2f;
-            color: #fff;
-        }
-        header {
-            background-color: #3a3a55;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: #00bfff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        section {
-            padding: 40px 20px;
-            margin-bottom: 40px;
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-        .section-title {
-            font-size: 2em;
-            margin-bottom: 20px;
-            text-align: center;
-            border-bottom: 2px solid #00bfff;
-            padding-bottom: 10px;
-        }
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background-color: #3a3a55;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 15px;
-        }
-        .card h3 {
-            margin: 0 0 10px;
-            color: #00bfff;
-        }
-        .buy-token-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            margin-top: 20px;
-            background-color: #00bfff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .buy-token-btn:hover {
-            background-color: #0099cc;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #3a3a55;
-            margin-top: 40px;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e2f;
+      color: #fff;
+    }
+    header {
+      background-color: #3a3a55;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #00bfff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+    }
+    section {
+      padding: 40px 20px;
+      margin-bottom: 40px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00bfff;
+      padding-bottom: 10px;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #3a3a55;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: #00bfff;
+    }
+    .buy-token-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 20px;
+      background-color: #00bfff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .buy-token-btn:hover {
+      background-color: #0099cc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #3a3a55;
+      margin-top: 40px;
+    }
 
-        /* New Styles for the Combined Section */
-        #info-section {
-            background-image: url('assets/genralpicturecoffeshop.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            color: #fff;
-            padding: 80px 20px;
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-        }
-        #info-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-        #info-section .two-column-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            max-width: 960px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-            align-items: flex-start;
-            justify-content: space-between; /* New: Pushes items to the sides */
-        }
-        #info-section .content-block {
-            padding: 40px;
-            background-color: rgba(30, 30, 47, 0.85);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        @media (max-width: 768px) {
-            #info-section .two-column-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    /* New Styles for Info Section */
+    #info-section {
+      background-image: url('assets/genralpicturecoffeshop.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #fff;
+      padding: 80px 20px;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+    }
+    #info-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    #info-section .two-column-container {
+      display: flex;
+      justify-content: space-between; /* pushes to left & right */
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      gap: 40px;
+      width: 100%;
+    }
+    #info-section .content-block {
+      flex: 1;
+      max-width: 45%;
+      padding: 30px;
+      background-color: rgba(30, 30, 47, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 768px) {
+      #info-section .two-column-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      #info-section .content-block {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -158,7 +160,11 @@
     <section id="hero">
         <div class="container">
             <h2 class="section-title">Your Next-Generation Coffee Experience</h2>
-            <p style="text-align: center;">Discover a blend of rich, aromatic coffee and delicious, locally-inspired food. At Bithereum Cafe, we combine a welcoming atmosphere with cutting-edge technology for a seamless experience.</p>
+            <p style="text-align: center;">
+                Discover a blend of rich, aromatic coffee and delicious, locally-inspired food.
+                At Bithereum Cafe, we combine a welcoming atmosphere with cutting-edge technology
+                for a seamless experience.
+            </p>
         </div>
     </section>
 
@@ -194,33 +200,49 @@
         <div class="two-column-container">
             <div class="content-block">
                 <h2 class="section-title" style="border-bottom: none;">About Our Cafe</h2>
-                <p style="text-align: center;">Welcome to Bithereum Cafe, where the rich aroma of expertly brewed coffee meets the innovative spirit of the blockchain. More than just a coffee shop, we envision Bithereum Cafe as a vibrant hub fostering community connections and embracing technological advancements. Our commitment starts with sourcing only the finest, ethically-traded coffee beans from around the globe, roasted to perfection to unlock their unique flavor profiles. Complementing our exceptional coffee, our culinary team crafts a delightful menu featuring unique and locally-inspired sandwiches, pastries, and treats, prepared with the freshest, highest-quality ingredients available.</p>
-                <p style="text-align: center;">Step into an atmosphere designed to inspire both productivity and relaxation. Whether you're seeking a quiet corner for your morning ritual, a comfortable space for an afternoon break, or a collaborative environment for meeting friends or colleagues, Bithereum Cafe offers the perfect ambiance. We are proud to be at the forefront of integrating the exciting world of cryptocurrency with everyday experiences, offering a seamless and modern payment system powered by Bithereum007.</p>
-                <p style="text-align: center;">Our journey begins with a passionate and dedicated team of 3-4 employees who are committed to providing exceptional service and creating a welcoming environment for every guest. Initially, our operating hours will be from 7:00 AM to 4:00 PM, strategically chosen to cater to the morning and early afternoon rushes. As we grow and better understand the needs of our community, we plan to extend our hours to 7:00 PM, allowing us to serve you longer into the day. Our location has been carefully selected in a high-traffic area with a potential customer base of 50,000 to 100,000 or more, ensuring accessibility and visibility for our cafe. We are excited to embark on this journey and look forward to becoming your favorite destination for quality coffee, delicious food, and a taste of the future.</p>
+                <p>
+                    Welcome to Bithereum Cafe, where the rich aroma of expertly brewed coffee meets the innovative spirit of the blockchain.
+                    More than just a coffee shop, we envision Bithereum Cafe as a vibrant hub fostering community connections and embracing
+                    technological advancements. Our commitment starts with sourcing only the finest, ethically-traded coffee beans from
+                    around the globe, roasted to perfection to unlock their unique flavor profiles. Complementing our exceptional coffee,
+                    our culinary team crafts a delightful menu featuring unique and locally-inspired sandwiches, pastries, and treats,
+                    prepared with the freshest, highest-quality ingredients available.
+                </p>
+                <p>
+                    Step into an atmosphere designed to inspire both productivity and relaxation. Whether you're seeking a quiet corner
+                    for your morning ritual, a comfortable space for an afternoon break, or a collaborative environment for meeting
+                    friends or colleagues, Bithereum Cafe offers the perfect ambiance. We are proud to be at the forefront of integrating
+                    the exciting world of cryptocurrency with everyday experiences, offering a seamless and modern payment system powered
+                    by Bithereum007.
+                </p>
+                <p>
+                    Our journey begins with a passionate and dedicated team of 3-4 employees who are committed to providing exceptional
+                    service and creating a welcoming environment for every guest. Initially, our operating hours will be from 7:00 AM to
+                    4:00 PM, strategically chosen to cater to the morning and early afternoon rushes. As we grow and better understand
+                    the needs of our community, we plan to extend our hours to 7:00 PM. Our location has been carefully selected in a
+                    high-traffic area with a potential customer base of 50,000 to 100,000+, ensuring accessibility and visibility.
+                </p>
             </div>
             <div class="content-block">
                 <h2 class="section-title" style="border-bottom: none;">Seamless Crypto Payments</h2>
-                <p style="text-align: center;">At Bithereum Cafe, we proudly accept Bithereum007 for all purchases. Experience the convenience of fast and secure decentralized payments, straight from your wallet.</p>
-                <p style="text-align: center;">**Don't have Bithereum007 tokens yet?** You can easily acquire them to use at our cafe and for other purposes.</p>
-                <a href="https://dexscreener.com/solana/2s3yx2i4jfyfgcynttgbmrdwzrcengbdfwqxtsjiztlb" target="_blank" class="buy-token-btn">Buy Bithereum007 Token</a>
+                <p>
+                    At Bithereum Cafe, we proudly accept Bithereum007 for all purchases. Experience the convenience of fast and secure
+                    decentralized payments, straight from your wallet.
+                </p>
+                <p>
+                    Don’t have Bithereum007 tokens yet? You can easily acquire them to use at our cafe and beyond.
+                </p>
+                <a href="https://dexscreener.com/solana/2s3yx2i4jfyfgcynttgbmrdwzrcengbdfwqxtsjiztlb"
+                   target="_blank" class="buy-token-btn">Buy Bithereum007 Token</a>
             </div>
         </div>
     </section>
-
-    <section id="payment">
-        <div class="container payment-section">
-            <h2 class="section-title">Seamless Crypto Payments</h2>
-            <p>At Bithereum Cafe, we proudly accept Bithereum007 for all purchases. Experience the convenience of fast and secure decentralized payments, straight from your wallet.</p>
-            <p>**Don't have Bithereum007 tokens yet?** You can easily acquire them to use at our cafe and for other purposes.</p>
-            <a href="https://dexscreener.com/solana/2s3yx2i4jfyfgcynttgbmrdwzrcengbdfwqxtsjiztlb" target="_blank" class="buy-token-btn">Buy Bithereum007 Token</a>
-        </div>
-    </section>
-
 </main>
 
 <footer>
     <p>&copy; 2025 Bithereum Cafe. All Rights Reserved.</p>
     <p>A Project by Bithereum007</p>
 </footer>
+
 </body>
 </html>
